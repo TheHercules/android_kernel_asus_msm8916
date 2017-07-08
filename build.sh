@@ -52,7 +52,7 @@ if [ -d ~/toolchain/aarch64-linux-android-6.x/bin/ ]; then
 	echo "Found toolchain: Setting up . . . "
 else
 	echo "Missing toolchain: Obtaining from Google . . ."
-	git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b master ~/toolchain/aarch64-4.9 
+	git clone https://bitbucket.org/matthewdalex/aarch64-linux-android-6.x.git ~/toolchain/aarch64-linux-android-6.x
 fi
 export CROSS_COMPILE=~/toolchain/aarch64-linux-android-6.x/bin/aarch64-linux-android-
 
